@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sys-eureka
+  servlet:
+    multipart:
+      max-file-size: 5242880
+      max-request-size: 5242880
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 7001
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #不注册本服务
+    fetch-registry: false #不获取eureka中的服务注册信息
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/${server.servlet.context-path}/eureka/

@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: sys-zuul
+  servlet:
+    multipart:
+      max-file-size: 5242880
+      max-request-size: 5242880
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 7005
+
+info:
+  name: ${spring.application.name}
+  port: ${server.port}
+  summary: spring cloud zuul
+  auther: xpl
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/sys-eureka/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+
+zuul:
+  prefix: /routing
+  ignored-services: "*"
+  routes:
+    provider:
+      serviceId: busi-provider
+      path: /provider/**
+    providerHystrix:
+      serviceId: busi-provider-hystrix
+      path: /providerHystrix/**
+
+

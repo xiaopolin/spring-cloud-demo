@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:7001/sys-eureka/eureka/
+
+
+
+
+
+
