@@ -35,5 +35,11 @@ zuul:
     providerHystrix:
       serviceId: busi-provider-hystrix
       path: /providerHystrix/**
+    providerConfig:
+      serviceId: busi-provider-config
+      path: /providerConfig/**
+    consumerFeignConfig:
+      serviceId: busi-feign-config
+      path: /feignConfig/**
 
 
