@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: busi-feign-config
+  servlet:
+    multipart:
+      max-file-size: 5242880
+      max-request-size: 5242880
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 8005
+
+

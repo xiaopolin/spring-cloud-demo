@@ -21,6 +21,7 @@
         <module>sys-zuul</module>
         <module>sys-config</module>
         <module>busi-provider-config</module>
+        <module>busi-feign-config</module>
     </modules>
     <packaging>pom</packaging>
 

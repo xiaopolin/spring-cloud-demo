@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: cloud-config-client-provider
+      name: cloud-config-client-consumer
       profile: local
       label: master
       uri: http://localhost:7006/sys-config
