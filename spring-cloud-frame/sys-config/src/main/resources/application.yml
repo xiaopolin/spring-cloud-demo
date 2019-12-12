@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: sys-config
+  servlet:
+    multipart:
+      max-file-size: 5242880
+      max-request-size: 5242880
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:xiaopolin/spring-cloud-demo.git
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 7006
+

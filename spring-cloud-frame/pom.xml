@@ -19,6 +19,8 @@
         <module>sys-feign</module>
         <module>sys-hystrix</module>
         <module>sys-zuul</module>
+        <module>sys-config</module>
+        <module>busi-provider-config</module>
     </modules>
     <packaging>pom</packaging>
 
