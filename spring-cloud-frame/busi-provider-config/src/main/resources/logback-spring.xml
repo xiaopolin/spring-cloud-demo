@@ -9,7 +9,7 @@
 	<!-- 定义变量 -->
 <!--	<springProperty scope="context" name="APP_NAME" source="spring.application.name"/>-->
 	<springProperty scope="context" name="LOG_PATH" source="logging.path" defaultValue="logs/" />
-	<property name="APP_NAME" value="busi-provider-hystrix" />
+	<property name="APP_NAME" value="busi-provider-config" />
 	<property name="LOG_GZ" value="-%d{yyyy-MM-dd}-%i.log.gz" />
 
 	<contextName>${APP_NAME}</contextName>
