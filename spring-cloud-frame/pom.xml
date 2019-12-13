@@ -13,6 +13,8 @@
 
         <module>busi-provider-hystrix</module>
         <module>busi-feign-hystrix</module>
+        <module>busi-provider-config</module>
+        <module>busi-feign-config</module>
 
         <module>sys-ribbon</module>
         <module>sys-eureka</module>
@@ -20,8 +22,6 @@
         <module>sys-hystrix</module>
         <module>sys-zuul</module>
         <module>sys-config</module>
-        <module>busi-provider-config</module>
-        <module>busi-feign-config</module>
     </modules>
     <packaging>pom</packaging>
 
