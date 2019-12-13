@@ -114,3 +114,5 @@ config云配置服务端
          serviceId: busi-provider
          path: /provider/**
    ~~~
+   
+3. config云配置文件只能放在git根目录下，无法放在文件夹中
