@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+      - local
+
+---
+spring:
+  profiles: local
+  application:
+    name: sys-config-server-local
+
+---
+spring:
+  profiles: dev
+  application:
+    name: sys-config-server-dev
+
+---
+spring:
+  profiles: test
+  application:
+    name: sys-config-server-test

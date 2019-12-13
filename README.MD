@@ -105,7 +105,7 @@ config云配置服务端
    ERROR in ch.qos.logback.classic.joran.action.ContextNameAction - Failed to rename context [APP_NAME_IS_UNDEFINED] as [busi-provider] java.lang.IllegalStateException: Context has been already given a name
    ~~~
 
-2. zuul配置服务只能在yml中配置，有空将其配置在config.java
+2. zuul配置服务只能在yml中配置，有空将其配置在ZuulConfig.java
 
    ~~~yml
    zuul:
